@@ -7,59 +7,76 @@
 	 <link rel="stylesheet" href="css/styles.css">
      <meta name="viewport" content="width=device-width, initial-scale=1"/>
 	 <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
 </head>
 
 <body>
-	<div class="container">
+	<div id="top" class="container">
 		<header class="main-header">
-			<h1><a href="index.html">Keith Hull</a></h1>
-			<ul class="main-nav">
-				<li><a href="index.html"> Home</a></li>
-				<li><a href="#portfolio"> Portfolio</a></li>
-				<li><a href="#contact"> Contact</a></li>
-			</ul>
+			<h1 class="name"><a href="index.html">Keith Hull</a></h1>
+			<nav class="main-nav">
+				<ul>
+					<li><a href="index.html"> Home</a></li>
+					<li><a href="#portfolio"> Portfolio</a></li>
+					<li><a href="#contact"> Contact</a></li>
+					<li><a href="#location"> Location</a></li>
+				</ul>
+			</nav>
 		</header>
 	</div>
 	
-	<div class="container">
-		<img src="images/profile-image.png" alt="profile image" class="profile-image"></img>		
+	<div class="profile-container">
+		<img src="images/keithmug.jpg" alt="profile image" class="profile-image">		
 		<p class="profile">HI! I'm a front-end developer who loves responsive design and css. I recently finished learning
 		front-end web development at Treehouse and am excited to put all my skills to use!</p>
 	</div>
 	
-	<div id="portfolio" class="image-gallery">
+	<div class="gallery-container">
+	
+	<section id="portfolio" class="image-gallery">
 	
 		<h2>Portfolio</h2>
-		<img src="images/portfolio-1.png" alt="portfolio-1">
-			<p class="image-title">Marketing page</p>
-			<p class="image-description">This project shows the front page of a marketing website meant for a specific business
-			im interested in.</p>
 		
-		<img src="images/portfolio-2.png" alt="portfolio-2">
-			<p class="image-title">Search page</p>
-			<p class="image-description">This project searches through a specific database to find information that the user is
-			trying to look up.</p>
-		
-		<img src="images/portfolio-3.png" alt="portfolio-3">
-			<p class="image-title">Travel App</p>
-			<p class="image-description">This project compares travel times based on different transportation methods and tells
-			you the best one.</p>
-		
-		<img src="images/portfolio-4.png" alt="portfolio-4">
-			<p class="image-title">Map of favorite spots</p>
-			<p class="image-description">This project uses mapping apis to plot points for my favorite spots in the city for a do
-			it yourself walking tour.</p>
-		
-		<img src="images/portfolio-5.png" alt="portfolio-5">
-			<p class="image-title">Photo Gallery</p>
-			<p class="image-description">This project shows pictures from a recent trip to the viewer and allows them to easily
-			navigate through photos.</p>
-		
-		<img src="images/portfolio-6.png" alt="portfolio-6">
-			<p class="image-title">Calculator</p>
-			<p class="image-description">Someone can enter in the numbers they want and press the big blue button and get the
-			result.</p>
-		
+		<ul class="gallery">
+			<li>
+				<img src="images/portfolio-1.png" alt="portfolio-1" class="portfolio-image">
+				<p class="image-title">Marketing page</p>
+				<p class="image-description">This project shows the front page of a marketing website meant for a specific business
+				im interested in.</p>
+			</li>
+			<li>
+				<img src="images/portfolio-2.png" alt="portfolio-2" class="portfolio-image">
+				<p class="image-title">Search page</p>
+				<p class="image-description">This project searches through a specific database to find information that the user is
+				trying to look up.</p>
+			</li>
+			<li>
+				<img src="images/portfolio-3.png" alt="portfolio-3" class="portfolio-image">
+				<p class="image-title">Travel App</p>
+				<p class="image-description">This project compares travel times based on different transportation methods and tells
+				you the best one.</p>
+			</li>
+			<li>
+				<img src="images/portfolio-4.png" alt="portfolio-4" class="portfolio-image">
+				<p class="image-title">Map of favorite spots</p>
+				<p class="image-description">This project uses mapping apis to plot points for my favorite spots in the city for a do
+				it yourself walking tour.</p>
+			</li>
+			<li>
+				<img src="images/portfolio-5.png" alt="portfolio-5" class="portfolio-image">
+				<p class="image-title">Photo Gallery</p>
+				<p class="image-description">This project shows pictures from a recent trip to the viewer and allows them to easily
+				navigate through photos.</p>
+			</li>
+			<li>
+				<img src="images/portfolio-6.png" alt="portfolio-6" class="portfolio-image">
+				<p class="image-title">Calculator</p>
+				<p class="image-description">Someone can enter in the numbers they want and press the big blue button and get the
+				result.</p>
+			</li>	
+		</ul>
+			
+	</section>
 	
 	</div>
 	
@@ -70,6 +87,28 @@
 		<p class="phone">Phone&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:412-289-1833">412-289-1833</a></p>
 		<p class="email">Email&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:keithhull01@yahoo.com">keithhull01@yahoo.com</a></p>
 	</div>
+	
+	<div id="location" class="location">
+		<h2>Location</h2>
+		<p class="contact-location">1 Awesome Street</p>
+		<p class="contact-location">Pittsburgh, Pennsylvania</p>
+		<img src="images/pittsburgh1.jpg" alt="location image" class="location-image">
+		<img src="images/pittsburgh-small1.jpg" alt="location smallimage" class="location-smallimage">			
+		
+	</div>
+	
+	<footer class="footer">
+		<h3 class="footer-name">Keith Hull</h3>
+		<nav class="footer-nav">
+			<ul>
+				<li class="back"><a href="#top"> BACK TO TOP</a></li>
+				<li class="responsive-nav"><a href="index.html"> Home</a></li>
+				<li class="responsive-nav"><a href="#portfolio"> Portfolio</a></li>
+				<li class="responsive-nav"><a href="#contact"> Contact</a></li>
+				<li class="responsive-nav"><a href="#location"> Location</a></li>
+			</ul>
+		</nav>
+	</footer>
 	
 
 
